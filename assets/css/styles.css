@@ -145,7 +145,7 @@ header nav ul li a {
 
 /************ Slider Styles **************/
 
-#slider {
+/* #slider {
 	margin-bottom: 150px;
 }
 
@@ -162,9 +162,9 @@ header nav ul li a {
 .slide1 { background-image: url("images/slider/slider01-small.jpg"); }
 /*Add styling for additional slide backgrounds*/
 
-#slider .cta {
+/* #slider .cta {
 	position: absolute;
-	/*adjust the bottom setting*/
+
 	bottom: 0;
 	right: 0;
 	background: rgba(6,25,35,0.5);
@@ -176,9 +176,11 @@ header nav ul li a {
 #slider .cta h2 {
 	font-size: 20px;
 	color: #fff;
+} */
+ 
+.swiper-slide>picture>img{
+  width: 100%;
 }
-
-/*Add three rules for flexslider*/
 
 /************ Overview Styles *************/
 
