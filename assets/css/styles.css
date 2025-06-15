@@ -4,6 +4,9 @@
 	padding: 0;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 
 :root {
 	--rich-black: #061923;
@@ -36,6 +39,7 @@ body {
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	color: var(--rich-black);
 	padding-top: 100px;
+  
 }
 
 h1, h2, h3, h4 { 
@@ -141,45 +145,14 @@ header nav ul li a {
 	color: var(--alice-blue);
 	font-weight: 600;
 	padding: 0 5px;
+
 }
 
 /************ Slider Styles **************/
 
-/* #slider {
-	margin-bottom: 150px;
-}
-
-#slider .flexslider ul li > div {
-	height: 0;
-	padding-top: 46.7%;
-	position: relative;
-}
-
-#slider > .flexslider > ul > li > div { 
-	background-size: cover; 
-}
-
-.slide1 { background-image: url("images/slider/slider01-small.jpg"); }
-/*Add styling for additional slide backgrounds*/
-
-/* #slider .cta {
-	position: absolute;
-
-	bottom: 0;
-	right: 0;
-	background: rgba(6,25,35,0.5);
-	padding: 10px;
-	color:#fff;
-	width: 100%;
-}
-
-#slider .cta h2 {
-	font-size: 20px;
-	color: #fff;
-} */
- 
 .swiper-slide>picture>img{
   width: 100%;
+  
 }
 
 /************ Overview Styles *************/
@@ -318,6 +291,7 @@ header nav ul li a {
 	color: var(--rich-black);
 	border-top-right-radius: 10px;
 	min-height: 500px;
+  transition: opacity 200ms linear;
 }
 
 #pricing #tabs > div:first-of-type {
@@ -350,6 +324,22 @@ header nav ul li a {
 #pricing #tabs div h4 {
 	text-align: center;
 }
+
+#tabs .active{
+  background-color: aquamarine;
+}
+#tabs .hidden{
+  display: none;
+}
+
+#tabs .visible{
+  display: block;
+}
+
+#tabs .visuallyhidden{
+  opacity: 0;
+}
+
 /************ listen Styles **************/
 
 #listen {
@@ -561,11 +551,6 @@ footer article a {
 	header .logo h1 { font-size: 36px; top: 12px;left: 60px; }
 	header .logo img { width: 70px; }
 
-	/* Slider styles */
-	#slider .cta { width: 25%; padding: 50px;}
-	.slide1 { background-image: url("images/slider/slider01-large.jpg"); }
-	/*Add additional slide backgrounds*/
-	
 	/* Overview styles */
 	#overview > article { flex: 1; margin-right: 50px;}
 	#overview > section { flex: 2; padding-top: 3em; }
